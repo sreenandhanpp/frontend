@@ -1,0 +1,37 @@
+<div class="container">
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2 well">
+				<div class="col-sm-12 form-legend">
+					<h2>Add product</h2>
+				</div>
+				<div class="col-sm-12 form-column">
+					<form action="/admin/add-product" method="post" enctype="multipart/form-data">
+						<div class="form-group">
+							<label for="country">Name</label>
+							<input type="text" id="country" name="name" class="form-control" placeholder="Name">
+						</div>
+                        <div class="form-group">
+							<label for="zip-code">Category</label>
+							<input type="text" id="category" name="category" class="form-control" placeholder="Category">
+						</div>
+						<div class="form-group">
+							<label for="zip-code">Description</label>
+							<input type="text" id="zip-code" name="description" class="form-control" placeholder="Description">
+						</div>
+						
+						<div class="form-group">
+							<label for="password-confirm">Price</label>
+							<input type="text" id="password-confirm" name="price" class="form-control">
+						</div>
+						<div class="form-group">
+                            
+  <label for="formFileSm" class="form-label">Image</label>
+  <input class="form-control " name="image" id="formFileSm" type="file">
+</div>
+
+						</div>
+						<input type="submit" value="Add product" class="btn btn-primary mt-3">
+					</form>
+				</div>
+			</div>
+		</div>
